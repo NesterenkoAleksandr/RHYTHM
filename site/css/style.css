@@ -1,0 +1,585 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *:after, *:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*---------------------------------------------*/
+.page{
+	position: relative;
+	overflow: hidden;
+	min-height: 100vh;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 26px;
+	color: #777777;
+	font-weight: 300;
+}
+
+h1, h3{
+	font-family: 'Dosis', sans-serif;
+	font-size: 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	line-height: 1.2;
+	opacity: 0.9;
+	color:#fefefe;
+}
+
+h2{
+	font-family: 'Dosis', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	line-height: 1.2;
+	color:#111111;
+}
+
+h3 {
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 0.2em;
+	text-align: center;
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+blockquote{
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+cite{
+	font-size: 11px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	display: block; 
+	text-align: left;
+}	
+
+/*---Section Header---*/
+.site-header{
+	padding: 25px 15px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.site-header .header-inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.nav-list{
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	flex-direction: column;
+}
+
+.nav-list a{
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 1.2;
+	letter-spacing: 0.3em;
+	text-decoration: none;
+	color: #ffffff;
+	opacity: 0.75;
+}
+
+.scrollto {
+	position: absolute;
+	left: 50%;
+	bottom: 35px;
+	width: 20px;
+	height: 20px;
+	transform: translateX(-50%) rotate(45deg);
+	background-color: #ffffff;
+	color: #222222;
+	padding-left: 9px;
+	padding-right: 7px;
+	border-radius: 3px;
+}
+
+.scrollto:hover{
+	cursor: pointer;
+}
+
+.scrollto i{
+	transform: rotate(-45deg);
+}
+
+.section-md{
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.section-1{
+	position: relative;
+	padding-left: 0px;
+	padding-right: 0px;
+	background-image: url(../img/section-1-back.png);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position:center;
+	text-align:center;
+}
+
+.section-1 h1 + h4{
+	font-size: 16px;
+	opacity: 0.68;
+	color:#fefefe;
+	margin-top: 40px;	
+}
+
+/*---Section About---*/
+.section-2{
+	padding-top: 75px;
+	padding-bottom: 50px;
+}
+
+.section-2 p{
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+/*------Block Team---*/
+.team-member{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+.team-member h4{
+	font-family: 'Dosis', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	letter-spacing: 0.4em;
+	line-height: 1.2;
+	text-transform: uppercase;
+	text-align: center;	
+	margin-top: 17px;
+}
+
+.team-member .position{
+	font-family: 'Dosis', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.4em;
+	line-height: 1.2;
+	text-transform: uppercase;	
+	text-align: center;
+	margin-top: 10px;	
+}
+
+/*---Section Services---*/
+.services-list{
+	display: flex;
+	align-items: center;
+	text-transform: uppercase;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;	
+	margin-top: 110px;
+}
+
+.services-list li{
+	text-align: center;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.services-list li:hover *{
+	color: #111111; 
+}
+
+.et-line-i{
+	font-size: 48px;
+	color: #777777;
+}
+
+.services-list a{
+	text-decoration: none;
+}
+
+.services-list i+p{
+	font-size: 14px;
+	letter-spacing: 6px;
+	color: #777777;
+	font-family: "Dosis", sans-serif;
+	font-weight: 400;
+	text-align: center;
+	margin-top: 25px;
+}
+
+/*---Section Banner---*/
+.banner-content{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.btn{
+	display: inline-block;
+	font-size: 14px;
+	padding: 8px 40px; 
+	margin-top: 35px;
+	text-decoration: none; 
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	border-radius: 3px;
+	background-color: #cfcfcf;	
+}
+
+.btn:hover{
+	background-color: #fefefe;
+}
+
+.banner-content h3+p{
+	margin-top: 18px;
+}
+
+.banner-imac{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.imac-display{
+	position: absolute;
+	height: 70%;
+	top: 5%;
+	left: 4%;
+	right: 4%;
+	overflow: hidden;
+}
+
+.imac-anim{
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	overflow: hidden;		
+}
+
+.imac-img-anim:hover{
+	cursor: pointer;
+	transition: 5s;
+	transform: translateY(-88%);	
+}
+
+.imac-display .imac-anim img{
+	will-change: transform;
+	transition: 1.5s all ease-in-out;
+}
+
+/*---Grid's styles---*/
+.row{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.row:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+[class*="col-"]{
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/*---Helper classes---*/
+.bg-dark{
+	background-color: #111111;
+}
+
+.scale-img{
+	width: 100%;
+	height: auto;	
+}
+
+.brd-top{
+	border-top: 1px solid rgba(19, 19, 19, 0.08);
+}
+
+.align-center{
+	text-align: center;
+}
+
+.align-right{
+	text-align: right;
+}
+
+.invert-clr *{
+	color: white; 
+}
+
+.invert-clr p{
+	opacity: 0.7; 
+}
+
+.invert-clr a{
+	color: #111111; 
+}
+
+.offset-m-top-32{
+	margin-top: 32px;
+}
+
+.offset-m-top-20{
+	margin-top: 20px;
+}
+
+.offset-m-top-50{
+	margin-top: 50px;
+}
+
+.offset-m-top-55{
+	margin-top: 55px;
+}
+
+.offset-p-top-140{
+	padding-top: 140px;
+}
+
+.offset-m-bottom-m30{
+	margin-bottom: -30px;
+}
+
+.offset-p-bottom-50{
+	padding-bottom: 50px;
+}
+
+/*---Styles for screen resolution from 576px to 767px---*/
+@media(min-width: 576px){
+	.nav-list{
+		flex-direction: row;
+	}
+
+	.nav-list a{
+		padding-left: 20px;
+	}
+
+	.site-header .header-inner{
+		flex-direction: row;
+	}
+
+	h1{
+		letter-spacing: 0.8em;
+	}	
+
+	.section-1 h1 + h4{
+		font-size: 19px;
+		margin-top: 70px;
+	}
+
+	.section-2{
+		padding-top: 100px;
+		padding-bottom: 55px;
+	}
+
+	h2{
+		font-size: 16px;
+	}
+
+	blockquote{
+		font-size: 20px;
+		line-height: 30px;
+	}
+
+	cite{
+		line-height: 38px;
+		margin-top: 12px;
+	}
+
+	.offset-m-top-32{
+		margin-top: 64px;
+	}
+
+	.offset-m-top-50{
+		margin-top: 94px;
+	}	
+
+	.col-4{
+		width: 50%;
+		float: left;
+	}
+
+	.banner-content{
+		padding-top: 100px;
+	}
+
+	.banner-imac{
+		margin-top: 25px;
+	}
+}
+
+/*---Styles for screen resolution from 768px to 991px---*/
+@media(min-width: 768px){
+	.col-6{
+		width: 50%;
+		float: left;
+	}
+
+	.banner-imac{
+		margin-top: -40px;
+	}
+}
+/*---Styles for screen resolution from 992px to 1199px---*/
+@media(min-width: 992px){
+	.site-header .header-inner{
+		flex-direction: row;
+	}
+
+	.nav-list{
+		display: flex;
+		align-items: center;
+		text-transform: uppercase;
+		flex-direction: row;
+	}
+
+	.nav-list a{
+		padding-left: 30px;
+	}
+
+	h1{
+		letter-spacing: 1.7em;
+	}	
+
+	.section-1 h1 + h4{
+		font-size: 19px;
+		margin-top: 100px;
+	}
+
+	.section-2{
+		padding-top: 135px;
+		padding-bottom: 105px;
+	}
+
+	h2{
+		font-size: 18px;
+	}
+
+	h3 {
+	font-size: 18px;
+	letter-spacing: 0.3em;
+	text-align: left;
+	}
+
+	blockquote{
+		font-size: 24px;
+		line-height: 38px;
+	}
+
+	cite{
+		line-height: 38px;
+		margin-top: 12px;
+	}
+
+	.offset-m-top-32{
+		margin-top: 64px;
+	}
+
+	.offset-m-top-50{
+		margin-top: 94px;
+	}	
+
+	.col-4{
+		width: 33.333%;
+		float: left;
+	}
+
+	.col-6{
+		width: 50%;
+		float: left;
+	}
+
+	.banner-content{
+		padding-top: 135px;
+		text-align: left;
+	}
+
+	.banner-imac{
+		margin-top: -40px;
+	}
+}
+
+/*---Styles for screen resolution from 1200px---*/
+@media(min-width: 1200px){
+	.banner-imac{
+		margin-top: -40px;
+	}
+}
