@@ -53,6 +53,12 @@ table {
 	box-sizing: border-box;
 }
 
+/*Remove outline*/
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
 /*---------------------------------------------*/
 .page{
 	position: relative;
@@ -92,7 +98,7 @@ h2{
 h3 {
 	font-size: 16px;
 	font-weight: 300;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.3em;
 	text-align: center;
 }
 
@@ -343,6 +349,56 @@ cite{
 	transition: 1.5s all ease-in-out;
 }
 
+/*---Section Works---*/
+.width-50{
+	width: 100%;
+}
+
+.is-checked{
+	color: #111111; 
+}
+
+.button-group{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.button {
+	background:none;	
+	border:none; 
+	cursor: pointer;
+	font-family: "Dosis", sans-serif;
+	font-size: 13px;
+	letter-spacing: 0.4em;
+	color: #111111;
+	opacity: 0.5;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+
+.button:hover{
+	opacity: 1;
+}
+
+/*------Isotope grid---*/
+.grid{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.grid-item{
+	width: 100%;
+	filter: grayscale(1);
+	transition: 0.2s;
+	padding: 2px;
+}
+
+.grid-item:hover{
+	cursor: pointer;
+	filter: grayscale(0);
+}
+
 /*---Grid's styles---*/
 .row{
 	margin-left: -15px;
@@ -387,8 +443,13 @@ cite{
 	color: white; 
 }
 
-.invert-clr p{
+.invert-clr p,
+.invert-clr q{
 	opacity: 0.7; 
+}
+
+.invert-clr cite{
+	opacity: 0.3; 
 }
 
 .invert-clr a{
@@ -407,12 +468,25 @@ cite{
 	margin-top: 50px;
 }
 
+.offset-m-70-70{
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
 .offset-m-top-55{
 	margin-top: 55px;
 }
 
 .offset-p-top-140{
 	padding-top: 140px;
+}
+
+.offset-m-bottom-75{
+	margin-bottom: 30px;
+}
+
+.offset-m-bottom-40{
+	margin-bottom: 40px;
 }
 
 .offset-m-bottom-m30{
@@ -423,7 +497,17 @@ cite{
 	padding-bottom: 50px;
 }
 
-/*---Styles for screen resolution from 576px to 767px---*/
+.section-140-25{
+	padding-top: 70px;
+	padding-bottom: 25px;
+}
+
+.offset-p-70-70{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+/*---Styles for screen resolution from 576px---*/
 @media(min-width: 576px){
 	.nav-list{
 		flex-direction: row;
@@ -471,7 +555,11 @@ cite{
 
 	.offset-m-top-50{
 		margin-top: 94px;
-	}	
+	}
+
+	.offset-m-bottom-75{
+		margin-bottom: 40px;
+	}
 
 	.col-4{
 		width: 50%;
@@ -485,9 +573,13 @@ cite{
 	.banner-imac{
 		margin-top: 25px;
 	}
+
+	.grid-item{
+		width: 50%;
+	}
 }
 
-/*---Styles for screen resolution from 768px to 991px---*/
+/*---Styles for screen resolution from 768px---*/
 @media(min-width: 768px){
 	.col-6{
 		width: 50%;
@@ -497,8 +589,13 @@ cite{
 	.banner-imac{
 		margin-top: -40px;
 	}
+
+	.section-140-25{
+		padding-top: 140px;
+	}
 }
-/*---Styles for screen resolution from 992px to 1199px---*/
+
+/*---Styles for screen resolution from 992px---*/
 @media(min-width: 992px){
 	.site-header .header-inner{
 		flex-direction: row;
@@ -555,7 +652,15 @@ cite{
 
 	.offset-m-top-50{
 		margin-top: 94px;
-	}	
+	}
+
+	.offset-m-bottom-75{
+		margin-bottom: 75px;
+	}
+
+	.width-50{
+		width: 50%;
+	}
 
 	.col-4{
 		width: 33.333%;
@@ -574,6 +679,10 @@ cite{
 
 	.banner-imac{
 		margin-top: -40px;
+	}
+
+	.grid-item{
+		width:33.3334%;
 	}
 }
 
