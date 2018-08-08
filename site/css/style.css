@@ -322,13 +322,13 @@ cite{
 	width: 100%;
 	height: 100%;
 	border-radius: 3px;
-	overflow: hidden;		
+	overflow: hidden;
 }
 
 .imac-img-anim:hover{
 	cursor: pointer;
 	transition: 5s;
-	transform: translateY(-88%);	
+	transform: translateY(-88%);
 }
 
 .imac-display .imac-anim img{
@@ -340,6 +340,11 @@ cite{
 .width-50{
 	width: 100%;
 }
+
+.width-66{
+	width: 100%;
+}
+
 
 .is-checked{
 	color: #111111; 
@@ -526,7 +531,6 @@ cite{
 
 .benefit h5+p{
 	font-size: 14px;
-	/*line-height: 26px;*/
 	font-family: "Open Sans", sans-serif;
 	font-weight: 300;
 	text-align: left;
@@ -614,6 +618,192 @@ cite{
 	border-color: #000000;
 }
 
+/*---Section Newsletter---*/
+.form-subscribe{
+	margin-left: 30px;
+	margin-right: 30px;	
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	margin-bottom: 10px;
+}
+
+.news-letter-header{
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	margin-bottom: 20px;
+}
+
+.submit{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	letter-spacing: 0.2em;
+	font-weight: 400;
+	line-height: 26px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: rgba(34,34,34, .9);
+	border-radius: 3px;	
+	height: 37px;
+	margin-top: 5px;
+	margin-left: 0px;
+	padding: 5px 20px;
+	border: 0px;
+}
+
+.submit:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+
+.form-subscribe input[type="email"]{
+	text-transform: uppercase;
+	width: 100%;
+	height: 37px;
+	padding-left: 13px;
+	padding-right: 13px;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 26px;
+}
+
+.subscribe-tip{ 
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 24px;
+	letter-spacing: 0;
+	color: #aaaaaa;
+}
+
+/*Section Contact*/
+.form-wrapper{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row-contact-ico{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.row-contact-btn{
+	display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-between;
+}
+
+.row-contact-btn .submit{
+	margin-top: 3px;
+}
+
+.contact-item{
+	position: relative;
+	padding-left: 45px;
+	text-align: left;
+	color: #777777;	
+	margin-bottom: 15px;
+}
+
+.contact-item dt{
+	text-transform: uppercase;
+	font-family: 'Dosis', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 0.3em;
+	line-height: 1.2;
+}
+
+.contact-item dd{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	line-height: 24px;
+	font-size: 15px;
+	margin-top: 4px;
+}
+
+.contact-item-icon{
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	top: 10px;
+	left: 5px;
+	text-align: center;
+}
+
+.contact-item-icon i{
+	position: relative;
+	font-style: 14px;
+	color: #f8f8f8;
+}
+
+.contact-item-icon:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #111;
+	border-radius: 2px;
+	transform: rotate(45deg);
+}
+.block-center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.row-contact-inputs{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-message input[type="text"],
+.form-message input[type="email"]{
+	width: 100%;
+	height: 35px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 26px;
+	text-align: left;
+	padding-left: 13px;
+	margin-bottom: 10px;
+}
+
+.form-message textarea{
+	width: 100%;
+	height: 80px;
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	letter-spacing: 0.2em;
+	line-height: 26px;
+	padding-left: 13px;
+	margin-bottom: 10px;
+	resize: none;
+}
+
+.form-message .col-6{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.form-message .row{
+	margin-left: -5px;
+	margin-right: -5px;
+}
+
 /*---Section Google Map---*/
 /*------Set the size of the div element that contains the map */
 #map {
@@ -694,6 +884,57 @@ cite{
 	left: 0;
 	right: 0;
 	width: 100%;
+}
+
+/*---Section Footer---*/
+.social-icons-links{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 23px;
+	margin-bottom: 105px;
+}
+
+.social-icons-links li{
+	padding-right: 20px;
+}
+
+.social-icons-links li:last-child{
+	padding-right: 0;
+}
+
+.social-icons-links a{
+	color: black;
+	display: block;
+	width: 24px;
+	height: 24px;
+	border-radius: 3px;
+	border: 1px solid black;
+	transform: rotate(45deg);
+}
+
+.social-icons-links a:hover{
+	opacity: 0.7;
+}
+
+.social-icons-links a i {
+	transform: translateY(-2px) rotate(-45deg);
+}
+
+.footer-copyright{
+	font-family: "Dosis", sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 24px;
+	letter-spacing: 0.5em;
+	color: #111111;
+	text-transform: uppercase;
+}
+
+.footer-slogan{
+	font-size: 11px;
+	line-height: 24px;
+	letter-spacing: 0;
 }
 
 /*---To Top button---*/
@@ -808,6 +1049,10 @@ cite{
 	margin-top: 20px;
 }
 
+.offset-m-top-5{
+	margin-top: 8px;
+}
+
 .offset-m-top-50{
 	margin-top: 50px;
 }
@@ -831,8 +1076,16 @@ cite{
 	margin-bottom: -30px;
 }
 
+.offset-m-top-60{
+	margin-top: 60px;
+}
+
 .offset-m-top-85{
 	margin-top: 85px;
+}
+
+.offset-m-top-95{
+	margin-top: 95px;
 }
 
 .offset-p-top-140{
@@ -863,6 +1116,10 @@ cite{
 	padding-bottom: 50px;
 }
 
+.offset-m-bottom-65{
+	margin-bottom: 65px;
+}
+
 .offset-p-bottom-90{
 	padding-bottom: 100px;
 }
@@ -882,6 +1139,11 @@ cite{
 	padding-bottom: 50px;
 }
 
+.offset-p-80-70{
+	padding-top: 80px;
+	padding-bottom: 70px;
+}
+
 .offset-p-80-80{
 	padding-top: 80px;
 	padding-bottom: 80px;
@@ -890,6 +1152,11 @@ cite{
 .offset-p-135-145{
 	padding-top: 135px;
 	padding-bottom: 145px;
+}
+
+.offset-p-140-80{
+	padding-top: 140px;
+	padding-bottom: 80px;
 }
 
 .offset_m-lr-m20{
@@ -913,7 +1180,7 @@ cite{
 
 	h1{
 		letter-spacing: 0.8em;
-	}	
+	}
 
 	.section-title h1 + h4{
 		font-size: 19px;
@@ -943,12 +1210,20 @@ cite{
 		margin-right: 50px;
 	}
 
-	.owl-carousel:hover .owl-nav button.owl-next{
+	.section-owl:hover .owl-nav button.owl-next{
 	    opacity: 1;
 	}
 
-	.owl-carousel:hover .owl-nav button.owl-prev {
+	.section-owl:hover .owl-nav button.owl-prev {
 	    opacity: 1;
+	}
+
+	.row-contact-ico{
+		flex-direction: row;
+	}
+
+	.row-contact-btn{
+		flex-direction: row;
 	}
 
 	.map-overlay h3{
@@ -999,9 +1274,27 @@ cite{
 		justify-content: space-between;
 	}
 
+	.form-subscribe{
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.submit{
+		margin-left: 5px;
+		margin-top: 0px;
+	}
+
+	.form-subscribe input[type="email"]{
+		width: 300px;
+	}	
+
 	.map-overlay h3{
 		letter-spacing: 0.3em;
 	}	
+
+	.width-66{
+		width: 96%;
+	}
 }
 
 /*---Styles for screen resolution from 768px---*/
@@ -1018,7 +1311,12 @@ cite{
 	.section-140-25{
 		padding-top: 140px;
 	}
+
+	.width-66{
+		width: 86%;
+	}
 }
+
 /*---Styles for screen resolution from 992px---*/
 @media(min-width: 992px){
 	.site-header .header-inner{
@@ -1116,11 +1414,19 @@ cite{
 	.grid-item{
 		width:33.3334%;
 	}
+
+	.width-66{
+		width: 76.6668%;
+	}
 }
 
 /*---Styles for screen resolution from 1200px---*/
 @media(min-width: 1200px){
 	.banner-imac{
 		margin-top: -40px;
+	}
+
+	.width-66{
+		width: 66.6668%;
 	}
 }
