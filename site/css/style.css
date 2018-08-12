@@ -81,7 +81,7 @@ h1, h3{
 
 h2, h5{
 	font-family: 'Dosis', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 0.5em;
@@ -646,16 +646,19 @@ cite{
 	text-transform: uppercase;
 	background: rgba(34,34,34, .9);
 	border-radius: 3px;	
+	width: 100%;
 	height: 37px;
 	margin-top: 5px;
 	margin-left: 0px;
 	padding: 5px 20px;
-	border: 0px;
+	border: 1px solid transparent;
 }
 
 .submit:hover{
 	cursor: pointer;
-	opacity: 0.8;
+	color: #000000;
+	border-color: #000000;
+	background-color: #ffffff;
 }
 
 .form-subscribe input[type="email"]{
@@ -689,7 +692,8 @@ cite{
 .row-contact-ico{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
 }
 
 .row-contact-btn{
@@ -703,14 +707,19 @@ cite{
 }
 
 .contact-item{
-	position: relative;
-	padding-left: 45px;
-	text-align: left;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	color: #777777;	
 	margin-bottom: 15px;
 }
 
-.contact-item dt{
+.ci-content{
+	margin-top: 10px;
+}
+
+.ci-content dt{
 	text-transform: uppercase;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 400;
@@ -719,7 +728,7 @@ cite{
 	line-height: 1.2;
 }
 
-.contact-item dd{
+.ci-content dd{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	line-height: 24px;
@@ -727,33 +736,28 @@ cite{
 	margin-top: 4px;
 }
 
-.contact-item-icon{
-	position: absolute;
+.ci-content a{
+	font-family: inherit;
+	margin-top: 4px;
+	text-decoration: none;
+	color: inherit;
+}
+
+.ci-icon{
 	width: 24px;
 	height: 24px;
-	top: 10px;
-	left: 5px;
 	text-align: center;
-}
-
-.contact-item-icon i{
-	position: relative;
-	font-style: 14px;
-	color: #f8f8f8;
-}
-
-.contact-item-icon:before{
-	content: '';
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-	top: 0;
-	left: 0;
-	background: #111;
 	border-radius: 2px;
 	transform: rotate(45deg);
+	background: #111;
 }
+
+.ci-icon i{
+	font-style: 14px;
+	color: #fefefe;
+	transform: rotate(-45deg);
+}
+
 .block-center{
 	display: block;
 	margin-left: auto;
@@ -1085,7 +1089,7 @@ cite{
 }
 
 .offset-m-top-95{
-	margin-top: 95px;
+	margin-top: 93px;
 }
 
 .offset-p-top-140{
@@ -1116,8 +1120,8 @@ cite{
 	padding-bottom: 50px;
 }
 
-.offset-m-bottom-65{
-	margin-bottom: 65px;
+.offset-m-bottom-75{
+	margin-bottom: 75px;
 }
 
 .offset-p-bottom-90{
@@ -1274,6 +1278,22 @@ cite{
 		justify-content: space-between;
 	}
 
+	.row-contact-ico{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.contact-item{
+		flex-direction: row;
+		text-align: left;
+		margin-bottom: 0;
+	}
+
+	.ci-content{
+		margin-top: 0;
+		margin-left: 15px;
+	}
+
 	.form-subscribe{
 		flex-direction: row;
 		justify-content: center;
@@ -1282,6 +1302,7 @@ cite{
 	.submit{
 		margin-left: 5px;
 		margin-top: 0px;
+		width: inherit;
 	}
 
 	.form-subscribe input[type="email"]{
